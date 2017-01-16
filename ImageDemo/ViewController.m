@@ -268,4 +268,7 @@
     textView.attributedText = [[NSAttributedString alloc] initWithString:textView.text attributes:attributes];
 }
 
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [textView resignFirstResponder];
+}
 @end
