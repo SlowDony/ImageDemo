@@ -65,6 +65,7 @@
     
     
     
+    
 }
 -(void)backbtn{
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -74,7 +75,7 @@
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-//    self.selectedColor = self.SelectedColorPickerView.color;
+
     if (self.delegate) {
         [self.delegate setSelectedColor:self.SelectedColorPickerView.color];
     }
